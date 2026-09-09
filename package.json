@@ -1,0 +1,47 @@
+{
+  "name": "env-redact",
+  "version": "0.1.0",
+  "description": "Import once. Secrets in env vars never reach stdout/stderr.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "env",
+    "secrets",
+    "redact",
+    "logging",
+    "security"
+  ],
+  "author": "buko106",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buko106/env-redact.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.0"
+  }
+}
