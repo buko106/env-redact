@@ -42,7 +42,7 @@ Longer values are replaced first, so a secret that contains another secret still
 
 ## Options
 
-| | |
+| Option | Effect |
 | --- | --- |
 | `ENV_REDACT=off` | Disable redaction entirely. |
 | `ENV_REDACT_MASK=<string>` | Use a different replacement string (default `***`). |
