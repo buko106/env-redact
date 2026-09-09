@@ -1,5 +1,8 @@
 # env-redact
 
+[![npm](https://img.shields.io/npm/v/env-redact)](https://www.npmjs.com/package/env-redact)
+[![CI](https://img.shields.io/github/actions/workflow/status/buko106/env-redact/ci.yml?branch=main&label=CI)](https://github.com/buko106/env-redact/actions/workflows/ci.yml)
+
 Import once. Secrets in env vars never reach stdout/stderr.
 
 ## Install
