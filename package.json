@@ -1,6 +1,6 @@
 {
   "name": "env-redact",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Import once. Secrets in env vars never reach stdout/stderr.",
   "type": "module",
   "exports": {
